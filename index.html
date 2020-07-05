@@ -12,7 +12,7 @@
 	
     <link rel="shortcut icon" href="/img/ironman-draw.png">
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-	
+	<link rel="stylesheet" href="/css/diaspora.css">
 	<script type="text/javascript" src="/js/diaspora.js" async></script>
 	
     <!-- Place this tag in your head or just before your close body tag. -->
@@ -73,6 +73,7 @@
 <body ontouchstart="">
 	<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
+
 <style type="text/css">
     header.intro-header{
 		
@@ -82,7 +83,6 @@
     }
     
 </style>
-
 
 <header class="intro-header" >
     <!-- Signature -->
@@ -109,47 +109,9 @@
 
 
 	
-    <style>
-/* Icon font style */
-@font-face{font-family:"iconfont";src:url(//at.alicdn.com/t/font_1679264_tle9h9614mq.eot?t=1583722241347);src:url(//at.alicdn.com/t/font_1679264_tle9h9614mq.eot?t=1583722241347#iefix) format("embedded-opentype"),url(data:application/x-font-woff2;charset=utf-8;base64,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) format("woff2"),url(//at.alicdn.com/t/font_1679264_tle9h9614mq.woff?t=1583722241347) format("woff"),url(//at.alicdn.com/t/font_1679264_tle9h9614mq.ttf?t=1583722241347) format("truetype"),url(//at.alicdn.com/t/font_1679264_tle9h9614mq.svg?t=1583722241347#iconfont) format("svg")}
-.iconfont{font-family:"iconfont"!important;font-size:22px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.icon-close:before{content:"\e689"}
-.icon-play:before{content:"\e65d"}
-.icon-menu:before{content:"\e623"}
-.icon-home:before{content:"\e612"}
-.icon-facebook:before{content:"\e632"}
-.icon-twitter:before{content:"\e659"}
-.icon-github:before{content:"\e64a"}
-.icon-pause:before{content:"\e64c"}
-.icon-scan:before{content:"\e600"}
-.icon-search:before{content:"\e601"}
-.icon-email:before{content:"\e62d"}
-.icon-like:before{content:"\e602"}
-.icon-wechat:before{content:"\e603"}
-.icon-left:before{content:"\e604"}
+    
 
-.iconfont {
-    font-family: "iconfont"!important;
-    font-size: 22px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-.icon-search {
-    font-size: 20px;
-    padding: 6px 6px 5px;
-    border-radius: 2px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    margin-top: -3px;
-}
-.icon-search:before {
-    content: "\e601";
-}
-</style>
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -200,7 +162,7 @@
 						
                         
                         <li>
-                            <a href="/search/">search</a>
+                            <a href="/search/">Search</a>
                         </li>
                         
                     
@@ -219,6 +181,9 @@
     </div>
     <!-- /.container -->
 </nav>
+
+
+
 <script>
 var typed = null;
 
@@ -338,16 +303,21 @@ CentOS7
                 <!-- <font color=#F89E8C>置顶</font>  -->
                 <!-- <font color=#1CB7ED>置顶</font>  -->
                                  
-            [Docker] CICD 持续集成 Devops
+            [Docker] 与CI/CD
         </h2>
         <h3 class="post-subtitle">
             This is Docker
         </h3>
         <div class="post-content-preview">
-            Docker2 CICD 持续集成 Devops
+            Docker与CI/CD
 一、简介
-1、Devops 介绍
-...
+什么是CI/CD
+
+持续集成
+持续集成是指软件个人研发的部分向软件整体部分交付，频繁进行集成以便更快地发现其中的错误。“持续集成”源自于极限编程(XP)，是 XP 最初的 12 种实践之一。
+　　
+CI 需要具备这些：
+全面的自动化测试。这是实践持续集成&amp;持续部署的基础，同时，选择合适的自动化测试工具也极其重要;灵活的基础设施。容器，虚拟机的存在让......
         </div>
     </a>
     
@@ -410,13 +380,6 @@ LXC为Linux Container的简写。可以提供轻量级的虚拟化，以便隔�
 
     <a href="/article/hexo-theme-liangguowen/">
         <h2 class="post-title">
-            
-                <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
-                <!-- <i class="fa fa-thumb-tack" style="color:#F89E8C" ></i> -->
-                <!-- <i class="fa fa-thumb-tack" style="color:#1CB7ED" ></i> -->
-                <font color=#F4711F>置顶</font>
-                <!-- <font color=#F89E8C>置顶</font>  -->
-                <!-- <font color=#1CB7ED>置顶</font>  -->
                                  
             [Hexo] Theme Hexo
         </h2>
@@ -551,7 +514,7 @@ Init
         </li>
       
         <li>
-          <a href="/article/docker-ci-cd/">[Docker] CICD 持续集成 Devops</a>
+          <a href="/article/docker-ci-cd/">[Docker] 与CI/CD</a>
         </li>
       
         <li>
@@ -601,7 +564,7 @@ Init
     <!-- Footer -->
     <!-- Footer -->
 <footer>
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">

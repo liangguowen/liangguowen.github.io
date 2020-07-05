@@ -12,14 +12,14 @@
 	
     <link rel="shortcut icon" href="/img/ironman-draw.png">
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-	
+	<link rel="stylesheet" href="/css/diaspora.css">
 	<script type="text/javascript" src="/js/diaspora.js" async></script>
 	
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Docker] CICD 持续集成 Devops - 梁国文 | Blog
+          [Docker] 与CI/CD - 梁国文 | Blog
         
     </title>
 
@@ -73,6 +73,7 @@
 <body ontouchstart="">
 	<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
+
 <style type="text/css">
     header.intro-header{
 		
@@ -82,7 +83,6 @@
     }
     
 </style>
-
 
 <header class="intro-header" >
     <!-- Signature -->
@@ -97,7 +97,7 @@
                               <a class="tag" href="/tags/#Docker" title="Docker">Docker</a>
                             
                         </div>
-                        <h1>[Docker] CICD 持续集成 Devops</h1>
+                        <h1>[Docker] 与CI/CD</h1>
                         <h2 class="subheading">This is Docker</h2>
                         <span class="meta">
                             Posted by 梁国文 on
@@ -117,47 +117,9 @@
 
 
 	
-    <style>
-/* Icon font style */
-@font-face{font-family:"iconfont";src:url(//at.alicdn.com/t/font_1679264_tle9h9614mq.eot?t=1583722241347);src:url(//at.alicdn.com/t/font_1679264_tle9h9614mq.eot?t=1583722241347#iefix) format("embedded-opentype"),url(data:application/x-font-woff2;charset=utf-8;base64,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) format("woff2"),url(//at.alicdn.com/t/font_1679264_tle9h9614mq.woff?t=1583722241347) format("woff"),url(//at.alicdn.com/t/font_1679264_tle9h9614mq.ttf?t=1583722241347) format("truetype"),url(//at.alicdn.com/t/font_1679264_tle9h9614mq.svg?t=1583722241347#iconfont) format("svg")}
-.iconfont{font-family:"iconfont"!important;font-size:22px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.icon-close:before{content:"\e689"}
-.icon-play:before{content:"\e65d"}
-.icon-menu:before{content:"\e623"}
-.icon-home:before{content:"\e612"}
-.icon-facebook:before{content:"\e632"}
-.icon-twitter:before{content:"\e659"}
-.icon-github:before{content:"\e64a"}
-.icon-pause:before{content:"\e64c"}
-.icon-scan:before{content:"\e600"}
-.icon-search:before{content:"\e601"}
-.icon-email:before{content:"\e62d"}
-.icon-like:before{content:"\e602"}
-.icon-wechat:before{content:"\e603"}
-.icon-left:before{content:"\e604"}
+    
 
-.iconfont {
-    font-family: "iconfont"!important;
-    font-size: 22px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-.icon-search {
-    font-size: 20px;
-    padding: 6px 6px 5px;
-    border-radius: 2px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    margin-top: -3px;
-}
-.icon-search:before {
-    content: "\e601";
-}
-</style>
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -208,7 +170,7 @@
 						
                         
                         <li>
-                            <a href="/search/">search</a>
+                            <a href="/search/">Search</a>
                         </li>
                         
                     
@@ -227,6 +189,9 @@
     </div>
     <!-- /.container -->
 </nav>
+
+
+
 <script>
 var typed = null;
 
@@ -280,9 +245,51 @@ var typed = null;
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p><strong>Docker2 CICD 持续集成 Devops</strong></p>
+                <p><strong>Docker与CI/CD</strong></p>
 <h2 id="一-简介">一、简介</h2>
-<h3 id="1-devops-介绍">1、Devops 介绍</h3>
+<h2 id="什么是cicd">什么是CI/CD</h2>
+<p><img src="/article/docker-ci-cd/147039026029061066.PNG" alt="img"></p>
+<p><strong>持续集成</strong></p>
+<p>持续集成是指软件个人研发的部分向软件整体部分交付，频繁进行集成以便更快地发现其中的错误。“持续集成”源自于极限编程(XP)，是 XP 最初的 12 种实践之一。
+　　
+<strong>CI 需要具备这些：</strong></p>
+<p>全面的自动化测试。这是实践持续集成&amp;持续部署的基础，同时，选择合适的自动化测试工具也极其重要;灵活的基础设施。容器，虚拟机的存在让开发人员和 QA 人员不必再大费周折;版本控制工具。如 Git，CVS，SVN 等;自动化的构建和软件发布流程的工具，如 Jenkins，flow.ci;反馈机制。如构建/测试的失败，可以快速地反馈到相关负责人，以尽快解决达到一个更稳定的版本。</p>
+<p><strong>持续集成的优点</strong></p>
+<p>“快速失败”，在对产品没有风险的情况下进行测试，并快速响应;最大限度地减少风险，降低修复错误代码的成本;将重复性的手工流程自动化，让工程师更加专注于代码;保持频繁部署，快速生成可部署的软件;提高项目的能见度，方便团队成员了解项目的进度和成熟度;增强开发人员对软件产品的信心，帮助建立更好的工程师文化。</p>
+<p><strong>持续交付</strong></p>
+<p>持续交付在持续集成的基础上，将集成后的代码部署到更贴近真实运行环境的「类生产环境」(production-like environments)中。持续交付优先于整个产品生命周期的软件部署，建立在高水平自动化持续集成之上。
+　　
+试想想，如果说等到所有东西都完成了才向下个环节交付，导致所有的问题只能再最后才爆发出来，解决成本巨大甚至无法解决。比如，我们完成单元测试后，可以把代码部署到连接数据库的 Staging 环境中进行更多的自动化测试。如果代码没有问题，可以继续手动部署到生产环境中。当然，持续交付并不是指软件每一个改动都要尽快部署到产品环境中，它指的是任何的代码修改都可以在任何时候实施部署。</p>
+<p><strong>持续交付的好处</strong></p>
+<p>持续交付和持续集成的优点非常相似：
+快速发布。能够应对业务需求，并更快地实现软件价值。编码-&gt;测试-&gt;上线-&gt;交付的频繁迭代周期缩短，同时获得迅速反馈;高质量的软件发布标准。整个交付过程标准化、可重复、可靠，整个交付过程进度可视化，方便团队人员了解项目成熟度;更先进的团队协作方式。从需求分析、产品的用户体验到交互 设计、开发、测试、运维等角色密切协作，相比于传统的瀑布式软件团队，更少浪费。</p>
+<h2 id="为什么使用docker">为什么使用docker</h2>
+<p>上述讲到CI/CD其关键在于高度的自动化，除此之外，还需要有相应的容器/虚拟机技术来配合。不然，在开发环境-&gt;测试环境-&gt;生产环境等交接时，都可能出现问题。具体说下，包括以下几点：</p>
+<p><strong>依赖时的复杂度</strong></p>
+<p>项目除了对程序包的依赖，对于运行环境也有些具体的要求。比如，Web应用需要安装和配置Web服务器、应用服务器、数据服务器等，企业应用中可能需要消息队列、缓存、定时作业，或是对其他系统以Web Service或API的方式暴露服务等。这些可以看成项目在系统层面对外部的依赖。这些依赖有些可以由项目自行处理，而有些则是项目无法处理的，比如运行容器，操作系统等，这些是项目的运行环境。</p>
+<p>总之，依赖的复杂度主要有两个：</p>
+<p>依赖包间的版本兼容性问题。兼容性问题是软件开发者的噩梦。
+间接依赖，或多重依赖问题。例如：A依赖于Python 2.7，A还依赖于B，但B却依赖于Python 3，苦逼的是Python 2.7和Python 3不兼容。依赖中最痛苦的事莫过于此。</p>
+<p><strong>不一致的环境</strong></p>
+<p>简单项目中，开发和运行环境都由开发人员搭建，当公司变大时，系统的运行环境将由运维人员搭建，而开发测试环境如果由运维人员搭建则工作量太大，由开发人员自己搭建则操作复杂又容易产生不一致的情况。假设公司为项目A和项目B开发了新版本。但环境和软件升级不是同步进行，出错的可能性非常大（想一想间接依赖和多重依赖的情况）。大家对这样的场景有没有印象：当新版本部署时，发现问题，测试或部署人员说：“版本有问题，无法运行！”开发人员却说：“我这里没问题啊，运行正常！”</p>
+<p><strong>泛滥的部署</strong></p>
+<p>如果项目简单，没有任何历史项目和代码的拖累，且各项目之间也没有任何的关联，只需进行资源方面的管理：分配机器，初始化系统，分配IP地址等。各个项目的运行环境、数据库、开发环境等都由具体项目的开发人员手动完成，这样的环境出问题怎么办？很简单，凉拌——重装系统。</p>
+<p>理想很丰满，现实很骨感，历史遗留问题往往对现在的项目有很大影响：多语言（Java，PHP、C ），多系统（各种Windows、Linux），多构建工具版本（Java7、8），各种配置文件和各种黑科技补丁脚本散落在系统的各个角落，没人能找得到，也没人搞得懂。配置被谁改掉了，服务宕掉了，根本无从管理。</p>
+<p>那么开始介绍我们的docker，此处附上链接，就不赘述docker是什么了。<a href="https://www.docker.com/" target="_blank" rel="noopener">docker官网</a></p>
+<p>我们来讲讲使用docker有什么好处。</p>
+<p>首先，Docker可以让你非常容易和方便地以“容器化”的方式去部署应用。 它就像集装箱一样，打包了所有依赖，再在其他服务器上部署很容易，不至于换服务器后发现各种配置文件散落一地，这样就解决了编译时依赖和运行时依赖的问题。</p>
+<p>其次，Docker的隔离性使得应用在运行时就像处于沙箱中，每个应用都认为自己是在系统中唯一运行的程序，就像刚才例子中，A依赖于Python 2.7，同时A还依赖于B，但B却依赖于python 3，这样我们可以在系统中部署一个基于Python 2.7的容器和一个基于Python 3的容器，这样就可以很方便地在系统中部署多种不同环境来解决依赖复杂度的问题。这里有些朋友可能会说，虚拟机也可以解决这样的问题。诚然，虚拟化确实可以做到这一点，但是这需要硬件支持虚拟化及开启BIOS中虚拟化相关的功能，同时还需要在系统中安装两套操作系统，虚拟机的出现是解决了操作系统和物理机的强耦合问题。但Docker就轻量化很多，只需内核支持，无需硬件和BIOS的强制要求，可以轻松迅速地在系统上部署多套不同容器环境，容器的出现解决了应用和操作系统的强耦合问题。</p>
+<p>正因为Docker是以应用为中心，镜像中打包了应用及应用所需的环境，一次构建，处处运行。这种特性完美解决了传统模式下应用迁移后面临的环境不一致问题。</p>
+<p>同时，Docker压根不管内部应用怎么启动，你自己爱咋来咋来，我们用docker start或run作为统一标准。这样应用启动就标准化了，不需要再根据不同应用而记忆一大串不同启动命令。</p>
+<p>基于Docker的特征，现在常见的利用Docker进行持续集成的流程如下：</p>
+<ol>
+<li>开发者提交代码；</li>
+<li>触发镜像构建；</li>
+<li>构建镜像上传至私有仓库；</li>
+<li>镜像下载至执行机器；</li>
+<li>镜像运行。</li>
+</ol>
+<p><img src="/article/docker-ci-cd/57761265ee2f8.jpg" alt="img"></p>
 
                 
 
@@ -296,7 +303,7 @@ var typed = null;
                     
                     
                         <li class="next">
-                            <a href="/article/hexo-theme-liangguowen/" data-toggle="tooltip" data-placement="top" title="[Hexo] Theme Hexo">Next Post &rarr;</a>
+                            <a href="/article/docker/" data-toggle="tooltip" data-placement="top" title="[Docker] 架构原理">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -346,7 +353,7 @@ var typed = null;
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#一-简介"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、简介</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-devops-介绍"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">1、Devops 介绍</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#一-简介"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、简介</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#什么是cicd"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">什么是CI/CD</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#为什么使用docker"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">为什么使用docker</span></a></li></ol>
         
         </div>
       </aside>
@@ -456,7 +463,7 @@ var typed = null;
     <!-- Footer -->
     <!-- Footer -->
 <footer>
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
